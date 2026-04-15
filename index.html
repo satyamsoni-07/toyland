@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyLand | Where Fun Never Ends!</title>
+    <!-- Importing Fun Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="spinner">
+            <i class="fa-solid fa-shapes"></i>
+        </div>
+        <h2>Loading Fun...</h2>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-car-side"></i> ToyLand
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#featured">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="cart" title="Your Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Where Fun <span>Never Ends!</span></h1>
+            <p>Discover the most exciting, educational, and colorful toys for kids of all ages. Bring joy to your playtimes today!</p>
+            <a href="#featured" class="cta-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero_banner.png" alt="ToyLand Hero Banner Background" class="floating">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="section-title">
+            <h2>Shop by <span>Category</span></h2>
+            <p>Find exactly what you are looking for</p>
+        </div>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="assets/action_figure.png" alt="Action Figures">
+                <h3>Action Figures</h3>
+            </div>
+            <div class="category-card">
+                <img src="assets/doll_toy.png" alt="Dolls">
+                <h3>Dolls</h3>
+            </div>
+            <div class="category-card">
+                <img src="assets/educational_toy.png" alt="Educational Toys">
+                <h3>Educational</h3>
+            </div>
+            <div class="category-card">
+                <img src="assets/rc_car.png" alt="Remote Control">
+                <h3>RC Toys</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Toys Section -->
+    <section id="featured" class="featured">
+        <div class="section-title">
+            <h2>Featured <span>Toys</span></h2>
+            <p>Our top picks just for you</p>
+        </div>
+        <div class="featured-grid">
+            <!-- Toy 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="assets/action_figure.png" alt="Super Hero Figure">
+                </div>
+                <div class="product-info">
+                    <h3>Super Hero Figure</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="price">$19.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Toy 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="assets/doll_toy.png" alt="Fashion Doll">
+                </div>
+                <div class="product-info">
+                    <h3>Fashion Doll</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$24.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Toy 3 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="assets/educational_toy.png" alt="Wood Shape Sorter">
+                </div>
+                <div class="product-info">
+                    <h3>Wood Shape Sorter</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$15.50</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Toy 4 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="assets/rc_car.png" alt="Speedster RC Car">
+                </div>
+                <div class="product-info">
+                    <h3>Speedster RC Car</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="price">$35.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Toy 5 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <!-- Reusing action figure image for demo -->
+                    <img src="assets/action_figure.png" alt="Ninja Action Figure">
+                </div>
+                <div class="product-info">
+                    <h3>Ninja Action Figure</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">$14.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Toy 6 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <!-- Reusing rc car image for demo -->
+                    <img src="assets/rc_car.png" alt="Monster Truck">
+                </div>
+                <div class="product-info">
+                    <h3>Monster Truck</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$45.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About <span>ToyLand</span></h2>
+                <p>Welcome to ToyLand! We believe that play is the work of a child, and we are dedicated to providing the
+                finest quality toys that encourage imagination, learning, and endless fun. Since 2010, we've been helping
+                parents and kids find exactly what they need to create beautiful childhood memories.</p>
+                <div class="stats">
+                    <div class="stat"><h3 class="counter" data-target="1500">0</h3><p>Toys</p></div>
+                    <div class="stat"><h3 class="counter" data-target="50000">0</h3><p>Happy Kids</p></div>
+                    <div class="stat"><h3 class="counter" data-target="14">0</h3><p>Years</p></div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="assets/educational_toy.png" alt="About ToyLand">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-title">
+            <h2>Happy <span>Customers</span></h2>
+            <p>What parents say about us</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-left quote"></i>
+                <p>"Absolutely love ToyLand! They have the best selection of educational toys that my toddler adores. The quality is unmatched."</p>
+                <div class="client">
+                    <div class="avatar" style="background-color: #ff6b6b">SM</div>
+                    <div class="client-info">
+                        <h4>Sarah Miller</h4>
+                        <span>Mom of 2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-left quote"></i>
+                <p>"Fast shipping and great customer service! I bought the remote control car for my nephew's birthday, and he hasn't stopped playing with it."</p>
+                <div class="client">
+                    <div class="avatar" style="background-color: #4ecdc4">JD</div>
+                    <div class="client-info">
+                        <h4>Jason Davis</h4>
+                        <span>Uncle</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-left quote"></i>
+                <p>"ToyLand makes finding the perfect gift so easy. Their layout and categories are brilliant. Highly recommended for finding quality gifts!"</p>
+                <div class="client">
+                    <div class="avatar" style="background-color: #feca57">EL</div>
+                    <div class="client-info">
+                        <h4>Emma Lin</h4>
+                        <span>Grandmother</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Get in <span>Touch</span></h2>
+            <p>Have questions? We'd love to hear from you!</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Fun Street, Playville, USA</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fa-solid fa-envelope"></i> hello@toyland.com</p>
+                <p><i class="fa-solid fa-clock"></i> Mon-Sat: 9AM - 8PM</p>
+            </div>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe">
+                        <small class="error-msg">Name is required</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com">
+                        <small class="error-msg">Valid email is required</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+                        <small class="error-msg">Message cannot be blank</small>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submit-btn">
+                        <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <!-- Success alert injected by JS -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-car-side"></i> ToyLand</h3>
+                <p>Spreading joy and imagination to kids all over the world.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#featured">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 ToyLand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
